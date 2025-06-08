@@ -1,0 +1,62 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0e1116;
+    color: #e0e0e0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #13161c;
+    padding: 1em 2em;
+}
+.logo {
+    height: 60px;
+}
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #f46d20;
+    font-weight: bold;
+}
+.hero {
+    background: linear-gradient(#0e1116cc, #0e1116cc), url('assets/logo_atrium.png') no-repeat center;
+    background-size: contain;
+    padding: 10em 2em;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+.hero p {
+    font-size: 1.3em;
+    color: #ccc;
+}
+section {
+    padding: 4em 2em;
+    max-width: 900px;
+    margin: auto;
+}
+section h2 {
+    color: #f46d20;
+}
+.button {
+    display: inline-block;
+    margin: 1em 1em 0 0;
+    padding: 0.7em 1.2em;
+    background-color: #f46d20;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 2em;
+    font-size: 0.9em;
+    background-color: #13161c;
+    color: #666;
+}
