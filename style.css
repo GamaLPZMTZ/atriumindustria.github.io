@@ -13,7 +13,7 @@ header {
     padding: 1em 2em;
 }
 .logo {
-    height: 120px;
+    height: 60px;
 }
 nav a {
     margin: 0 1em;
@@ -22,7 +22,7 @@ nav a {
     font-weight: bold;
 }
 .hero {
-    background: linear-gradient(#0e1116cc, #0e1116cc), url('assets/logo_atrium.png') no-repeat center;
+    background: linear-gradient(#0e1116cc, #0e1116cc), url('assets/logo_atrium.png.png') no-repeat center;
     background-size: contain;
     padding: 10em 2em;
     text-align: center;
