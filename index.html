@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ATRIUM - Chapa Metálica de Precisión</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/tu-clave.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="atrium-logo-icon.svg" type="image/svg+xml">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
-        /* NUEVO ESTILO para la sección de Servicios */
+        body {
+            font-family: 'Barlow', sans-serif;
+            background-color: #0b0c10;
+            margin: 0;
+            color: #fff;
+        }
         #servicios {
             background-color: #111;
-            color: #fff;
             padding: 60px 20px;
         }
         #servicios h2 {
@@ -28,22 +37,42 @@
         .servicio-item {
             background: #1a1a1a;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 94, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .servicio-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(255, 106, 0, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px rgba(255, 94, 0, 0.3);
         }
         .servicio-item h3 {
             color: #FF6A00;
             margin-bottom: 10px;
         }
+        .servicio-item i {
+            font-size: 2rem;
+            color: #FF6A00;
+            margin-bottom: 10px;
+            display: block;
+        }
+        #nosotros {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        #nosotros h2 {
+            color: #FF6A00;
+            font-size: 2rem;
+        }
+        #nosotros p {
+            line-height: 1.6;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo_atrium.png.png" alt="ATRIUM Logo" class="logo" />
+        <img src="logo_atrium.png" alt="ATRIUM Logo" class="logo" />
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#servicios">Servicios</a>
@@ -60,19 +89,23 @@
     <section id="servicios">
         <h2>Nuestros Servicios</h2>
         <div class="servicios-grid">
-            <div class="servicio-item">
+            <div class="servicio-item" data-aos="fade-up">
+                <i class="fas fa-bolt"></i>
                 <h3>Corte Láser</h3>
                 <p>Alta precisión en acero, aluminio y más. Perfecto para proyectos industriales con acabados finos.</p>
             </div>
-            <div class="servicio-item">
+            <div class="servicio-item" data-aos="fade-up">
+                <i class="fas fa-ruler-combined"></i>
                 <h3>Doblado CNC</h3>
                 <p>Ángulos exactos, piezas repetibles y series industriales para máxima eficiencia.</p>
             </div>
-            <div class="servicio-item">
+            <div class="servicio-item" data-aos="fade-up">
+                <i class="fas fa-drafting-compass"></i>
                 <h3>Diseño CAD</h3>
                 <p>Desarrollo profesional de planos técnicos y modelado 3D para fabricación precisa.</p>
             </div>
-            <div class="servicio-item">
+            <div class="servicio-item" data-aos="fade-up">
+                <i class="fas fa-cogs"></i>
                 <h3>Ensamble</h3>
                 <p>Integración de estructuras metálicas y subensambles según estándares de manufactura.</p>
             </div>
@@ -83,8 +116,10 @@
         <h2>Quiénes somos</h2>
         <p>
             ATRIUM es una empresa metalmecánica con enfoque en los procesos de chapistería industrial, corte láser,
-            doblez CNC, diseño CAD y desarrollo de soluciones personalizadas. Nuestra misión es transformar
-            planos en precisión real, desde la idea hasta la fabricación.
+            doblez CNC, diseño CAD y desarrollo de soluciones personalizadas.
+        </p>
+        <p>
+            Nuestra misión es transformar planos en precisión real, desde la idea hasta la fabricación.
         </p>
     </section>
 
@@ -92,11 +127,19 @@
         <h2>Contacto</h2>
         <p>¿Tienes un proyecto? Hablemos:</p>
         <a class="button" href="mailto:direccion@atriumindustria.com">📧 Enviar correo</a>
-        <a class="button whatsapp" href="https://wa.me/523310933202">💬 WhatsApp</a>
+        <a class="button whatsapp" href="https://wa.me/523310933202">🛋 WhatsApp</a>
     </section>
 
     <footer>
         <p>&copy; 2025 ATRIUM. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
+
+        
+   
+         
