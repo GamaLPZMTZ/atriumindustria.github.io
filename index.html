@@ -68,11 +68,50 @@
             line-height: 1.6;
             margin-top: 20px;
         }
+        #contacto .button {
+            display: inline-block;
+            margin: 10px 10px;
+            padding: 10px 20px;
+            background-color: #FF6A00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        #contacto .button:hover {
+            background-color: #e65c00;
+        }
+        #upload {
+            margin-top: 30px;
+        }
+        #upload label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #upload input[type="file"] {
+            background-color: #1a1a1a;
+            color: #fff;
+            border: 1px solid #444;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #upload .submit-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #FF6A00;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #upload .submit-button:hover {
+            background-color: #e65c00;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo_atrium.png.png" alt="ATRIUM Logo" class="logo" />
+        <img src="logo_atrium.png" alt="ATRIUM Logo" class="logo" />
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#servicios">Servicios</a>
@@ -103,6 +142,13 @@
                 <i class="fas fa-drafting-compass"></i>
                 <h3>Diseño CAD</h3>
                 <p>Desarrollo profesional de planos técnicos y modelado 3D para fabricación precisa.</p>
+                <div id="upload">
+                    <form action="https://formspree.io/f/tu_id_de_formspree" method="POST" enctype="multipart/form-data">
+                        <label for="fileUploadCAD">📁 Sube tu archivo CAD (.dxf, .dwg):</label>
+                        <input type="file" id="fileUploadCAD" name="cadFile" accept=".dxf,.dwg" required />
+                        <button class="submit-button" type="submit">Enviar diseño</button>
+                    </form>
+                </div>
             </div>
             <div class="servicio-item" data-aos="fade-up">
                 <i class="fas fa-cogs"></i>
@@ -127,7 +173,12 @@
         <h2>Contacto</h2>
         <p>¿Tienes un proyecto? Hablemos:</p>
         <a class="button" href="mailto:direccion@atriumindustria.com">📧 Enviar correo</a>
-        <a class="button whatsapp" href="https://wa.me/523310933202">🛋 WhatsApp</a>
+        <a class="button whatsapp" href="https://wa.me/523310933202">💬 WhatsApp</a>
+
+        <div id="upload">
+            <label for="fileUpload">📎 Carga tu diseño para cotización:</label>
+            <input type="file" id="fileUpload" name="designFile" accept=".pdf,.dxf,.dwg,.png,.jpg" />
+        </div>
     </section>
 
     <footer>
@@ -139,7 +190,3 @@
     </script>
 </body>
 </html>
-
-        
-   
-         
